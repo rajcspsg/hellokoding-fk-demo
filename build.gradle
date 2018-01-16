@@ -1,0 +1,24 @@
+group 'hellokoding-fk-demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.8-dmr'
+
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.1.0.RELEASE'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '1.5.9.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context-support
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
